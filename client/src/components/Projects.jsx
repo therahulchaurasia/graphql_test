@@ -6,7 +6,6 @@ import ProjectCard from "./ProjectCard"
 
 export default function Projects() {
   const { loading, error, data } = useQuery(GET_PROJECTS)
-  console.log(loading, error, data)
   if (loading) return <Spinner />
   if (error) return <p>Something Went Wrong</p>
   return (
